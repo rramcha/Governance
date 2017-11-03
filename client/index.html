@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" ng-app="sampleApp">
 
 <head>
@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>::Mean App::</title>
+    <title>::Sample Angular JS Node App::</title>
 
     <!-- Bootstrap -->
     <link href="dependencies/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,13 @@
     <![endif]-->
 </head>
 
-<body class="height100" ui-view>
+<body class="height100">
+    <section class="container-fluid app-container height100">
+                
+    <div class="col-md-12 col-lg-12 padding0" ng-include="'templates/header.html'" ng-if="isLoggedIn"></div>
+    <div class="col-md-12 col-lg-12 padding0 height100" ui-view></div>
+    <div class="col-md-12 col-lg-12 padding0" ng-include="'templates/footer.html'" ng-if="isLoggedIn"></div>
+    </section>
 
     <script src="dependencies/angular/angular.min.js"></script>
     <script src="dependencies/angular-ui-router/release/angular-ui-router.min.js"></script>
