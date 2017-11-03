@@ -13,8 +13,6 @@ app.controller('loginController',['$scope','$location','$rootScope',function($sc
 
 }]);
 
-
-
 /**
  *dashboardController
  *@input app
@@ -30,9 +28,6 @@ app.controller('dashboardsController',['$scope','$location','$rootScope','$state
 	
 	$rootScope.$state = $state;
 }]);
-
-
-
 
 app.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 	
@@ -64,7 +59,6 @@ app.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 			})
 	
 	});
-
 
 app.run(function($rootScope) {
 	$rootScope.isLoggedIn = false;
