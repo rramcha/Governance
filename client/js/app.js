@@ -43,23 +43,23 @@ app.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 	
 			.state('home', {
 				url: '/home',
-				templateUrl: 'templates/home.html',
+				templateUrl: 'views/home.html',
 				controller:'dashboardsController'
 			})
 	
 			.state('login', {
 				url:'/login',
-				templateUrl:'templates/login.html',
+				templateUrl:'views/login.html',
 				controller:'loginController'  
 			})
 			.state('about', {
 				url:'/about',
-				templateUrl:'templates/about.html',
+				templateUrl:'views/about.html',
 				controller:'dashboardsController'  
 			})
 			.state('contact', {
 				url:'/contact',
-				templateUrl:'templates/contact.html',
+				templateUrl:'views/contact.html',
 				controller:'dashboardsController'  
 			})
 	
