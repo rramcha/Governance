@@ -1,0 +1,41 @@
+[
+   {
+      "id":1101,
+      "templateSeqId":2081,
+      "desc":"New Template Request created",
+      "role":"SYSTEM",
+      "action":"Create Request",
+      "status":"New",
+      "actionDate":1484039615000,
+      "actionBy":"SYSTEM",
+      "actorEmail":null,
+      "actorName":"SYSTEM",
+      "actorDisplayName":null
+   },
+   {
+      "id":1702,
+      "templateSeqId":2081,
+      "desc":"Template created successfully.",
+      "role":"4216",
+      "action":"Add Template",
+      "status":"Creation In-progress",
+      "actionDate":1484898498000,
+      "actionBy":"5434895910",
+      "actorEmail":"abc@intuit.com",
+      "actorName":"abc",
+      "actorDisplayName":null
+   },
+   {
+      "id":1722,
+      "templateSeqId":2081,
+      "desc":"Assigned to the approver: Ravindra",
+      "role":"4216",
+      "action":"ASSIGNED",
+      "status":"Pending Creation",
+      "actionDate":1484898315000,
+      "actionBy":"5434895910",
+      "actorEmail":"ravindra@gmail.com",
+      "actorName":"Ravindra",
+      "actorDisplayName":null
+   } 
+]
