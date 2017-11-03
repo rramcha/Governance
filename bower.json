@@ -1,9 +1,9 @@
 {
-  "name": "sampleapp",
+  "name": "Nodejs-app",
   "description": "",
   "main": "index.js",
   "authors": [
-    "KM Siva Kumar"
+    "Ravindra"
   ],
   "license": "ISC",
   "moduleType": [],
@@ -11,8 +11,8 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "client/bower_components",
-    "client/dependencies",
+    "public/bower_components",
+    "public/dependencies",
     "test",
     "tests"
   ],
