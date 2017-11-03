@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>::Sample Angular JS Node App::</title>
+    <title>Node App</title>
 
     <!-- Bootstrap -->
     <link href="dependencies/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!--  <link href="dependencies/jquery-responsive/responsive-nav.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,13 +24,14 @@
 <body class="height100">
     <section class="container-fluid app-container height100">
                 
-    <div class="col-md-12 col-lg-12 padding0" ng-include="'templates/header.html'" ng-if="isLoggedIn"></div>
+    <div class="col-md-12 col-lg-12 padding0" ng-include="'views/header.html'" ng-if="isLoggedIn"></div>
     <div class="col-md-12 col-lg-12 padding0 height100" ui-view></div>
-    <div class="col-md-12 col-lg-12 padding0" ng-include="'templates/footer.html'" ng-if="isLoggedIn"></div>
+    <div class="col-md-12 col-lg-12 padding0" ng-include="'views/footer.html'" ng-if="isLoggedIn"></div>
     </section>
 
     <script src="dependencies/angular/angular.min.js"></script>
     <script src="dependencies/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--<script src="dependencies/jquery-responsive/responsive-nav.js"></script>-->
     <script src="js/app.js"></script>
 
 </body>
