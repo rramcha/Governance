@@ -14,5 +14,8 @@
     "express": "^4.14.0",
     "mongodb": "^2.2.4",
     "mongoose": "^4.5.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
