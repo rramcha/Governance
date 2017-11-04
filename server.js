@@ -3,6 +3,7 @@ bodyParser = require('body-parser'),
 mongoose = require('mongoose'),
 app = new express(),
 winston = require('winston');
+
 winston.emitErrs = true;
 //TO DO: config for setting up mongodb
 //var db = require('./config/db.js');
@@ -37,7 +38,6 @@ module.exports.stream = {
     }
 };
 
-//TO DO: set up taskrunner - GULP
 
 //TO DO: set up e2e testing - Protractor
 
