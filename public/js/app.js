@@ -1,5 +1,4 @@
 var app = angular.module('sampleApp',['ui.router']);
-
 /**
  *usersController
  *@input app

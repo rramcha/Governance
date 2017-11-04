@@ -1,14 +1,14 @@
 //TO DO - Define all the api for our app
 var express = require('express');
 var router = express.Router();
+var logger = require('../logger.js');
 //var approvals = require('../app/models/approvals-history');
-// middleware to use for all requests
 router.use(function(req, res, next) {
-    console.log('Baby steps to start building routes');
     next();
 });
 
 router.get('/test', function(req, res) {
+   logger.info("Entering route test");
     res.json([
    {
       "id":1101,
