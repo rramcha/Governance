@@ -60,7 +60,7 @@ app.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 				url:'/contact',
 				templateUrl:'views/contact.html',
 				controller:'dashboardsController'  
-			})
+			});
 	
 	});
 

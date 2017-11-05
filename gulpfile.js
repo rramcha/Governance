@@ -36,7 +36,6 @@ gulp.task('watch', function() {
 
 // start the server and listen for changes
 gulp.task('server', function() {
-    // configure nodemon
     nodemon({
         script: 'server.js',
         watch: ["server.js", 'public/*', 'public/*/**','app/*','app/*/**'],
@@ -44,7 +43,7 @@ gulp.task('server', function() {
     }).on('restart', function() { 
     
     gulp.src('server.js')
-      .pipe(notify('Running the start tasks and stuff'));
+      .pipe(notify('Running the start tasks'));
   });
 });
 
