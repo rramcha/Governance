@@ -1,9 +1,22 @@
-var app = angular.module('sampleApp',['ui.router']);
+var angularApp = angular.module('DataLoader',['ui.router']);
+
+angularApp.config(function($interpolateProvider,$httpProvider){
+    //For IE Cache issue
+    $httpProvider.defaults.headers.common['Cache-Control'] = 'no-cache';
+    if (!$httpProvider.defaults.headers.get) {
+        $httpProvider.defaults.headers.get = {};
+    }
+    //disable IE ajax request caching
+    $httpProvider.defaults.headers.get['If-Modified-Since'] = '0';
+    $httpProvider.defaults.headers.get['Pragma'] = 'no-cache';
+});
+
 /**
  *usersController
  *@input app
  */
-app.controller('loginController',['$scope','$location','$rootScope',function($scope,$location,$rootScope) {
+angular.module("DataLoader")
+    .controller('loginController',['$scope','$location','$rootScope',function($scope,$location,$rootScope) {
 	$rootScope.isLoggedIn = false;
 	$scope.submitForm = function(){
 		$location.path('/home');
@@ -12,13 +25,12 @@ app.controller('loginController',['$scope','$location','$rootScope',function($sc
 
 }]);
 
-
-
 /**
  *dashboardController
  *@input app
  */
-app.controller('dashboardsController',['$scope','$location','$rootScope','$state',function($scope,$location,$rootScope,$state) {
+angular.module("DataLoader")
+    .controller('dashboardsController',['$scope','$location','$rootScope','$state',function($scope,$location,$rootScope,$state) {
 	
 	$rootScope.isLoggedIn = true;
 	$scope.logout = function(){
@@ -30,10 +42,8 @@ app.controller('dashboardsController',['$scope','$location','$rootScope','$state
 	$rootScope.$state = $state;
 }]);
 
-
-
-
-app.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
+angular.module("DataLoader")
+    .config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 	
 		$urlRouterProvider.otherwise('/login');
 		$locationProvider.html5Mode(false).hashPrefix('!');
@@ -60,12 +70,12 @@ app.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 				url:'/contact',
 				templateUrl:'views/contact.html',
 				controller:'dashboardsController'  
-			});
+			})
 	
 	});
 
-
-app.run(function($rootScope) {
+angular.module("DataLoader")
+    .run(function($rootScope) {
 	$rootScope.isLoggedIn = false;
 	$rootScope.isCollapsed = true;
 });
