@@ -1,11 +1,11 @@
-Here you will find a simple CRUD Operations Using Angular js Node.js as a server
+Data-Loader
+===========
 
-1.npm insatll
-
-2.bower install
-
-3.Start Your Mongo
-
-Type : http://localhost:90/
-
-You will see 
+Getting Started
+--
+- Install Nodejs
+- Clone this repo to your local system
+- Navigate to project folder using Command Line
+- Do `npm install`(Windows)
+- `gulp` to start up the application
+- Access application at `http://localhost:90`
